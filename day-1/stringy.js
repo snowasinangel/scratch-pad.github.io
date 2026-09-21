@@ -15,8 +15,11 @@
 
 function length(string) {
   // YOUR CODE HERE //
-  
+  return string.length;
 }
+
+console.log(length('hello')); // => 5
+console.log('Hello World')
 
 /**
  * Given an input String, return a new String forced to lowercase.
@@ -24,8 +27,10 @@ function length(string) {
 
 function toLowerCase(string) {
   // YOUR CODE HERE //
+  return
 }
 
+git PushManager
 /**
  * Given an input String, return a new String forced to uppercase.
  */
