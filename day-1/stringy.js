@@ -30,7 +30,7 @@ function toLowerCase(string) {
   return
 }
 
-git PushManager
+
 /**
  * Given an input String, return a new String forced to uppercase.
  */
@@ -164,3 +164,4 @@ if (
   module.exports.sortAscending = sortAscending;
   module.exports.sortDescending = sortDescending;
 }
+
