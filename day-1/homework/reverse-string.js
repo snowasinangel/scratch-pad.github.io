@@ -21,7 +21,16 @@
 
 function reverseString(input) {
   // YOUR CODE HERE //
+  let result = ""
+  let i = input.length - 1
+  while (i >= 0) {
+     result += input[i];
+     i--;
+  }
+  return result
 }
+
+console.log(reverseString("hello"))
 
 // DON'T REMOVE THIS CODE //////////////////////////////////////////////////////
 if (

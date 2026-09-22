@@ -13,12 +13,14 @@
  * work?
  */
 
+
 function length(string) {
   // YOUR CODE HERE //
   return string.length;
 }
 
 console.log(length("Hello"))
+
 
 /**
  * Given an input String, return a new String forced to lowercase.
@@ -54,7 +56,13 @@ console.log(toUpperCase('hello'))
  */
 function toDashCase(string) {
   // YOUR CODE HERE //
+ var elements = string.split(" ")
+ var elementsJoined = elements.join("-")
+  return elementsJoined.toLowerCase()
+  
 }
+
+console.log(toDashCase('Hello World'))
 
 /**
  * Given an input String and a single character, return true if the String
@@ -72,8 +80,16 @@ function toDashCase(string) {
 
 function beginsWith(string, char) {
   // YOUR CODE HERE //
+  if (string[0] === char.toLowerCase()) {
+    return true
+  } else if (string[0] === char.toUpperCase()) {
+    return true
+  } else {
+    return false
+  }
 }
 
+console.log(beginsWith('Max', 'm'))
 /**
  * Given an input String and a single character, return true if the String
  * ends with the character, false otherwise. The Function is case insensitive.
@@ -88,7 +104,16 @@ function beginsWith(string, char) {
  */
 function endsWith(string, char) {
   // YOUR CODE HERE //
+  if (string[string.length - 1] === char.toUpperCase()) {
+    return true
+  } else if (string[string.length - 1] === char.toLowerCase()) {
+    return true
+  } else {
+    return false
+  }
 }
+
+console.log(endsWith("Max", "X"))
 
 /**
  * Given two input Strings, return the Strings concatenated into one.
@@ -97,6 +122,7 @@ function endsWith(string, char) {
  */
 function concat(stringOne, stringTwo) {
   // YOUR CODE HERE //
+  return stringOne + stringTwo
 }
 
 /**
@@ -111,8 +137,13 @@ function concat(stringOne, stringTwo) {
  */
 function join(stringOne, stringTwo) {
   // YOUR CODE HERE //
+
   var args = Array.from(arguments);
+    
+    return args.join("")
 }
+
+console.log(join("my", "name", "is"))
 
 /**
  * Given two Strings, return the longest of the two.
@@ -125,7 +156,14 @@ function join(stringOne, stringTwo) {
  */
 function longest(stringOne, stringTwo) {
   // YOUR CODE HERE //
+  if (stringOne.length > stringTwo.length) {
+    return stringOne
+  } else {
+    return stringTwo
+  }
 }
+
+console.log(longest("ben", "maggie"))
 
 /**
  * Given two Strings, return 1 if the first string is higher in alphabetical order (meaning earlier in the alphabet) than
@@ -136,7 +174,17 @@ function longest(stringOne, stringTwo) {
  */
 function sortAscending(stringOne, stringTwo) {
   // YOUR CODE HERE //
+  
+  if (stringOne < stringTwo) {
+    return 1
+  } else if (stringOne > stringTwo) {
+    return -1
+  } else {
+    return 0
+  } 
 }
+
+console.log("ben", "maggie")
 
 /**
  * Given two Strings, return 1 if the first is lower in alphabetical order (meaning later in the alphabet) than
@@ -147,6 +195,13 @@ function sortAscending(stringOne, stringTwo) {
  */
 function sortDescending(stringOne, stringTwo) {
   // YOUR CODE HERE //
+  if (stringOne > stringTwo) {
+    return 1
+  } else if (stringOne < stringTwo) {
+    return -1
+  } else {
+    return 0
+  } 
 }
 
 // DON'T REMOVE THIS CODE //////////////////////////////////////////////////////
