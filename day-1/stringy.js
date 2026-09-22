@@ -18,8 +18,7 @@ function length(string) {
   return string.length;
 }
 
-console.log(length('hello')); // => 5
-console.log('Hello World')
+console.log(length("Hello"))
 
 /**
  * Given an input String, return a new String forced to lowercase.
@@ -27,9 +26,10 @@ console.log('Hello World')
 
 function toLowerCase(string) {
   // YOUR CODE HERE //
-  return
+  return string.toLowerCase()
 }
 
+console.log(toLowerCase('HELLO'))
 
 /**
  * Given an input String, return a new String forced to uppercase.
@@ -37,7 +37,10 @@ function toLowerCase(string) {
 
 function toUpperCase(string) {
   // YOUR CODE HERE //
+  return string.toUpperCase()
 }
+
+console.log(toUpperCase('hello'))
 
 /**
  * Given an input String, return a new String forced to dash-case.
