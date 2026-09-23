@@ -16,7 +16,11 @@
  */
 function isArray(value) {
   // YOUR CODE HERE //
-}
+  return Array.isArray(value)
+  }
+
+console.log(typeof [])
+console.log(isArray([]))
 
 /**
  * Given an input value, return true if the value is an Object intended as a
@@ -34,6 +38,7 @@ function isArray(value) {
  */
 function isObject(value) {
   // YOUR CODE HERE //
+  
 }
 
 /**

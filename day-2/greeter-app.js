@@ -31,7 +31,22 @@
 
 function greeter(hour) {
   // YOUR CODE HERE
+
+  if (hour >= 0 && hour <= 11) {
+      console.log('Good Morning!')
+  } else if (hour >= 12 && hour <= 16) {
+      console.log('Good Afternoon!') 
+  } else if (hour >= 17 && hour <= 21) {
+      console.log('Good Evening!')
+  } else if (hour >= 22 && hour <= 24) {
+      console.log('Good Night!')
+  }
+
 }
+
+console.log(greeter(5))
+console.log(greeter(15))
+console.log(greeter(21))
 
 /*
  * To test our greeter when developing, we need to fake some input data, ie,

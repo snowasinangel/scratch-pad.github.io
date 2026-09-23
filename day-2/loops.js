@@ -12,6 +12,12 @@
  */
 function printArrayValues(array) {
   // YOUR CODE HERE //
+  //loop forward through array
+  //positive iteration of index
+  for (let i = 0; i <= array.length - 1; i++) {
+    //use console.log() to pring the values of the array
+    console.log(array[i])
+  }
 }
 
 /**
@@ -20,6 +26,11 @@ function printArrayValues(array) {
  */
 function printArrayValuesInReverse(array) {
   // YOUR CODE HERE //
+  //loop backwards = iterate index backwards using --
+  for (let i = array.length - 1; i > 0; i--) {
+    //print the resulting values
+    
+  }
 }
 
 /**

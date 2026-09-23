@@ -14,7 +14,12 @@
 
 function createGreaterThanFilter(base) {
   // YOUR CODE HERE
-}
+  return function (value) {
+    return value > base
+  }
+  }
+
+  console.log(createGreaterTHanFilter(100))
 
 /**
  * Given an input base to test against, which could be a String or Number,
