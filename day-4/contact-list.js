@@ -12,6 +12,17 @@
 
 function makeContact(id, nameFirst, nameLast) {
   // Solve this function first
+
+  //the function was created
+  //the parameters were established
+  //should return a contact object
+
+  var contact = {}
+  contact.id = id
+  contact.nameFirst = nameFirst
+  contact.nameLast = nameLast
+  
+  return contact                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
 }
 
 var contacts = [
@@ -51,12 +62,31 @@ var contacts = [
 
 function findContact(array, fullName) {
   // YOUR CODE HERE
+
+  //findContact function created
+  //take in an array of contact objects and fullName
+
+  //return contact object 
+  //return contact objects using a for loop
+
+  for (let i = 0; i <= array.length - 1; i++) {
+  
+
+  //match contact object to fullName input 
+  //matching ===
+
+   if (`${array.firstName} ${array.lastName}` === fullName) {
+      return array[i]
+   }
+  }
+  //or return undefined if no matching obj is found
 }
 
 /**
  * Create a function called `removeContact` that takes in an array of contact objects and a
  * contact object to remove. This function search through the array and remove the contact object
  * if found.
+ * Use splice method
  */
 function removeContact(array, contact) {
   // YOUR CODE HERE

@@ -38,8 +38,15 @@ console.log(isArray([]))
  */
 function isObject(value) {
   // YOUR CODE HERE //
-  
+  return (
+    typeof value === "object" &&
+    value !== null &&
+    function isArray &&
+
+  )
 }
+
+console.log(isObject({}))
 
 /**
  * Given an input value, return true if is either an Array or an an Object
